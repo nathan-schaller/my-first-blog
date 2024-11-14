@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<div class="page-header">
+    <h3>
+        <a href="/">{{ character.id_character }}</a>
+    </h3>
+    <form method="POST" class="post-form">{% csrf_token %}
+        <img src="{% static character.photo %}">
+        <b class="lieu-actuel"> Lieu actuel: </b> 
+        <img src="{% static character.lieu.photo %}">
+        <div class="nouveau-lieu">Déplacer:</div>
+        <c>{{ form.as_ul }}</c>
+        <button type="submit" class="btn btn-orange">OK</button>
+        <a href="{% url 'character_list' %}">Back</a>
+    </form>
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+            <p class="message">{{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+ 
+ 
+{% endblock %}

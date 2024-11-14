@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for character in characters %}
+        <div class="characters">
+            <h2><a href="">{{ character.id_character|linebreaksbr }}</a></h2>
+            <p>{{ character.photo }}</p>
+            <p>{{ linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

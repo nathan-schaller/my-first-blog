@@ -1,0 +1,172 @@
+.page-header {
+    background-color: #000000;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    background-color: #000000;
+    color: #743f0a;
+    font-size: 50pt;    
+}
+
+.page-header h3 a{
+    background-color: #000000;
+    color: #743f0a;
+    font-size: 30pt; 
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+a,
+c {  
+    font-family: 'Herculanum', cursive;
+}
+
+.date {
+    color: #ffffff;
+}
+
+.save {
+    float: right;
+}
+
+.characters-form textarea,
+.characters-form input {
+    width: 100%;
+}
+ 
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+ 
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.characters {
+    display: flex;
+    justify-content: center; /* Centre les colonnes */
+    gap: 20px; /* Espace entre chaque colonne */
+    max-width: 100%; /* Prend 90% de la largeur de la page */
+    margin: auto ; /* Centre le conteneur horizontalement */
+}
+
+.character-item {
+    flex: 1; /* Les colonnes prennent l’espace disponible de manière égale */
+    max-width: 250px; /* Largeur maximale de chaque colonne */
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+}
+
+.character-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #743f0a;
+}
+
+.character-item img {
+    width: 100%;
+    max-width: 200px; /* Limite la taille maximale de l'image */
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover; /* Maintient l'aspect de l'image */
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+.characters > .date,
+.characters > .actions {
+    float: right;
+}
+ 
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+ 
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+
+.post-form b {
+    background-color: #000000;
+    color: #743f0a;
+    font-size: 15pt
+}
+
+.post-form a {
+    background-color: #000000;
+    color: #743f0a;
+    font-size: 10pt
+}
+
+.post-form c {
+    background-color: #000000;
+    color: #000000;
+    font-size: 9pt
+}
+
+.post-form d {
+    background-color: #000000;
+    color: #743f0a;
+    font-size: 10pt
+}
+
+.nouveau-lieu{
+    margin-left: 39pt;
+    background-color: #000000;
+    color: #743f0a;
+    font-size: 15pt
+}
+
+.btn-orange {
+    margin-left: 38pt;
+    background-color: #743f0a;  /* Orange */
+    color: white;               /* Texte en blanc */
+    border: 2px solid #743f0a;  /* Bordure orange */
+}
+
+.btn-orange:hover {
+    background-color: rgb(163, 91, 3);  /* Couleur un peu plus foncée au survol */
+    border-color: rgb(163, 91, 3);      /* Bordure plus foncée au survol */
+}
+
+.post-form img{
+    width: 100%;
+    max-width: 200px; /* Limite la taille maximale de l'image */
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover; /* Maintient l'aspect de l'image */
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+.lieu-actuel {
+    margin-right: 50px;
+    margin-left: 50px;  /* Déplace "Lieu actuel" de 20px vers la droite */
+}
+

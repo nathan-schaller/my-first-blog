@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div style=" color: #743f0a; font-family: 'Herculanum', cursive; font-size: 13pt;">Des créatures étranges ont été retrouvées en ville... Nous avons étudié leur comportement et avons noté nos observations:</div>
+<div style=" color: #743f0a; font-family: 'Herculanum', cursive; font-size: 13pt;">- elles se reposent au cimetière (qui possède une capacité infinie), puis en ressortent généralement affamées</div>
+<div style=" color: #743f0a; font-family: 'Herculanum', cursive; font-size: 13pt;">- elles vont se nourrir de chair fraîche à l'hôpital, puis en ressortent pleines d'énergie et malicieuses</div>
+<div style=" color: #743f0a; font-family: 'Herculanum', cursive; font-size: 13pt;">- elles s'amusent à terrifier des passants dans la ruelle, puis finissent par être en manque d'aura noire</div>      
+<div style=" color: #743f0a; font-family: 'Herculanum', cursive; font-size: 13pt;">- enfin elles rechargent leurs batteries d'aura noire à l'église, mais cela les épuise...</div> 
+<div class="characters">
+        {% for character in characters %}
+            <div class="character-item">
+                <!-- Lien vers la page de détails du personnage -->
+                <a href="{% url 'character_detail' id_character=character.id_character %}">
+                    <h2>{{ character.id_character }}</h2>
+                </a>
+                <!-- Image du personnage, centrée dans l'élément -->
+                <img src="{% static character.photo %}" alt="Photo de {{ character.id_character }}">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
